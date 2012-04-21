@@ -31,6 +31,6 @@ DEPEND="dev-python/setuptools
 		dev-python/pep8
 		dev-python/prettytable
 		dev-python/simplejson
-		!sys-auth/keystone"
+"
 RDEPEND="${DEPEND}"
 

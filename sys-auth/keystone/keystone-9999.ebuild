@@ -23,15 +23,22 @@ fi
 LICENSE="Apache-2.0"
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE=""
+IUSE="ldap sql"
 
 DEPEND="dev-python/setuptools
 		dev-python/pep8
 		dev-python/lxml
 		dev-python/python-daemon"
 RDEPEND="${DEPEND}
+		 dev-python/greenlet
+		 dev-python/eventlet
+		 dev-python/paste
+		 dev-python/pastedeploy
+		 dev-python/routes
+		 sql? ( dev-python/sqlalchemy-migrate )
+		 dev-python/webob
 		 dev-python/python-novaclient
-		 dev-python/python-ldap
+		 ldap? ( dev-python/python-ldap )
 		 dev-python/passlib"
 
 src_install() {
