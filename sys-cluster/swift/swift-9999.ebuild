@@ -20,10 +20,12 @@ SLOT="0"
 KEYWORDS="~amd64"
 IUSE="storage-server proxy-server"
 
-DEPEND="dev-python/setuptools"
+DEPEND="dev-python/setuptools
+        dev-lang/python[sqlite]"
 RDEPEND="${DEPEND}
          dev-python/netifaces
          dev-python/eventlet
+         dev-python/simplejson
          dev-python/webob
          dev-python/pastedeploy
          dev-python/pyxattr"
