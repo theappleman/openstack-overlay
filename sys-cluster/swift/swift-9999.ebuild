@@ -28,7 +28,9 @@ RDEPEND="${DEPEND}
          dev-python/simplejson
          dev-python/webob
          dev-python/pastedeploy
-         dev-python/pyxattr"
+         dev-python/pyxattr
+         storage-server? ( net-misc/rsync[xattrs] )
+"
 
 # Can only use this when python.eclass is using EAPI4
 #REQUIRED_USE="|| ( storage-server proxy-server )"

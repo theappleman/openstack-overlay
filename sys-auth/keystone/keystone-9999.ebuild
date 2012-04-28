@@ -23,7 +23,7 @@ fi
 LICENSE="Apache-2.0"
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE="ldap sql"
+IUSE="ldap"
 
 DEPEND="dev-python/setuptools
 		dev-python/pep8
@@ -35,7 +35,7 @@ RDEPEND="${DEPEND}
 		 dev-python/paste
 		 dev-python/pastedeploy
 		 dev-python/routes
-		 sql? ( dev-python/sqlalchemy-migrate )
+		 dev-python/sqlalchemy-migrate
 		 dev-python/webob
 		 dev-python/python-novaclient
 		 ldap? ( dev-python/python-ldap )
